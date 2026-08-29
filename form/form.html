@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>q=1</h1>
+    <h2>Data server</h2>
+    <form action="/images/banner.jpg.jpeg" method="post" autocomplete="on">
+        <label for="username" >username</label>
+<input type="text" name="" id="username">
+<button type="submit">sumbit</button>
+
+    </form>
+
+    <h1>q=2</h1>
+    <h2>GET method</h2>
+    <form method="get" action="/images/banner.jpg.jpeg">
+        <label for="noo">noo</label>
+        <input type="search" id="noo" name="">
+        <button type="submit">sumbit</button>
+    </form>
+
+    <h1>q=3</h1>
+    <h2>HTML5</h2>
+    <form novalidate method="post">
+  <label for="username" >username</label>
+  <input type="text" id="username" name=""><br>
+  <br>
+  <label for="email" >email</label>
+  <input type="email" id="email" name=""><br>
+
+  <br>
+  <button type="submit">sumbit</button>
+    </form>
+
+    <br>
+    <br>
+    <h1>q=4</h1>
+    <h3>Encoding</h3>
+    <form  enctype="application/x-www-form-urlencoded">
+        <label for="email">email</label>
+        <input type="email" id="email" name=""><br><br>
+        <label for="name" >name</label>
+        <input type="text" id="name" name="">
+        <button type="submit">sumbit</button>
+        
+    </form>
+ <br>
+ <br>
+ <h1>q=5</h1>
+ <h3>upload files</h3>
+ <form method="post" enctype="multipart/form-data">
+    <label for="files">files</label>
+    <input type="file" id="files" name=""><br><br>
+    <button type="submit">sumbit</button>
+
+ </form> 
+ <br>
+ <h1>q=6</h1>
+ <h3>plain text Encoding</h3>
+ <form enctype="text/plain">
+    <label for="ashok">ashok</label>
+    <input type="text" id="ashok" name=""><br><br>
+    <label for="khoja" >khoja</label>
+    <input type="text" id="khoja" name="">
+    <br>
+    <input type="submit" value="sumbit">
+ </form>
+ <br>
+ <br>
+   <h1>q=7</h1>
+   <h3>New tab</h3>
+   <form name="username" target="_blank">
+
+    <label for="username" >username</label>
+    <input type="text" name="username" id="username">
+    <button type="submit">sumbit</button>
+   </form>
+
+ <h1>q=8</h1>
+   <h3>associated label</h3>
+   <form action="">
+    <label for="email">email</label>
+    <input type="email" id="email" name="">
+   </form>
+   <br>
+   <br>
+   <h1>q=9</h1>
+   <h3>radio buttons.</h3>
+   <p>gender</p>
+   <input type="radio" id="male" name="gender" value="male" checked>
+   <label for="male">male</label>
+<br>
+   <input type="radio" id="female" name="gender" value="female" checked>
+   <label for="female">female</label>
+ <br>
+ <br>
+  <h1>q=10</h1>
+   <h3>checkbox</h3>
+   <form>
+   <fieldset>
+    <legend>hobbies</legend>
+   <input type="checkbox" id="trader" name="trader" value="trader">
+   <label for="trader">trader</label>
+   <br>
+   <input type="checkbox" id="b.Tech" name="b.Tech" value="b.Tech">
+   <label for="b.Tech">b.tech</label>
+   <br>
+   <input type="checkbox" id="driving" name="driving" value="driving">
+   <label for="driving">driving</label>
+   </fieldset>
+   </form>
+
+
+   <h1>q=11</h1>
+   <h3>car brand</h3>
+   <form>
+    <select name="cars">
+        <option value="bmw">bmw</option>
+        <option value="fortuner">fortuner</option>
+        <option value="s11">s11</option>
+    </select>
+   </form>
+
+
+   <h1>q=12</h1>
+   <h3>multiple choices</h3>
+   <select multiple  size="3">
+<option>love</option>
+<option value="">family</option>
+<option value="">pesa</option>
+<option>enjoy</option>
+   </select>
+
+   <h1>q=13</h1>
+   <h3>groups fruits</h3>
+   <label for="fruits">Choose a fruit:</label>
+<select id="fruits" name="fruits">
+  <optgroup label="Citrus">
+    <option value="orange">Orange</option>
+    <option value="lemon">Lemon</option>
+  </optgroup>
+  <optgroup label="Berries">
+    <option value="strawberry">Strawberry</option>
+    <option value="blueberry">Blueberry</option>
+  </optgroup>
+</select>
+<br>
+<h1>q=14</h1>
+ <label for="comments">Comments:</label>
+<textarea id="comments" name="user_comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+ <form>
+    <h1>q=15</h1>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button">Click Me</button>
+</form>
+
+<h1>q=16</h1>
+
+HTML
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="firstName">
+    
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="lastName">
+  </fieldset>
+</form>
+
+<br>
+<h1>q=17</h1>
+
+HTML
+<form>
+  <fieldset disabled>
+    <legend>Account Credentials</legend>
+    <label for="user-id">Username:</label>
+    <input type="text" id="user-id" name="username">
+    
+    <label for="user-pass">Password:</label>
+    <input type="password" id="user-pass" name="password">
+  </fieldset>
+</form>
+<h1>q=18</h1>
+
+HTML
+<form>
+  <label for="browser-choice">Choose a browser:</label>
+  <input list="browsers" id="browser-choice" name="browser">
+
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+  </datalist>
+</form>
+<h1>q=19</h1>
+
+HTML
+<form>
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" name="password" required minlength="8">
+</form>
+<h1>q=20</h1>
+
+HTML
+<form>
+  <label for="emails">Email Addresses:</label>
+  <input type="email" id="emails" name="emails" multiple placeholder="e.g. alex@example.com, sam@example.com">
+</form>
+<h1>q=21</h1>
+
+HTML
+<form>
+  <label for="event-date">Select Date (2023 only):</label>
+  <input type="date" id="event-date" name="eventDate" min="2023-01-01" max="2023-12-31">
+</form>
+<h1>q=22</h1>
+
+HTML
+<form>
+  <label for="qty">Quantity (1-10):</label>
+  <input type="number" id="qty" name="quantity" min="1" max="10" step="1">
+</form>
+
+<h1>q=23</h1>
+
+HTML
+<form>
+  <label for="vol">Volume:</label>
+  <input type="range" id="vol" name="volume" min="0" max="100" value="50">
+</form>
+<h1>q=24</h1>
+HTML
+<form action="/upload" method="post" enctype="multipart/form-data">
+  <label for="doc-upload">Upload Document (.pdf, .docx):</label>
+  <input type="file" id="doc-upload" name="document" accept=".pdf,.docx" required>
+</form>
+<h1>q=25</h1>
+
+HTML
+<form action="/process" method="post">
+  <input type="hidden" name="session_token" value="xyz123abc456">
+</form>
+<h1>q=26</h1>
+
+HTML
+<form>
+  <label for="fav-color">Favorite Color:</label>
+  <input type="color" id="fav-color" name="favColor" value="#ff0000">
+</form>
+<h1>q=27</h1>
+HTML
+<form>
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+</form>
+<h1>q=28</h1>
+
+HTML
+<form>
+  <label for="website">Website:</label>
+  <input type="url" id="website" name="website" required placeholder="https://example.com">
+</form>
+<h1>q=29</h1>
+
+HTML
+<form>
+  <label for="site-search">Search:</label>
+  <input type="search" id="site-search" name="q" autofocus placeholder="Search here...">
+</form>
+<h1>q=30</h1>
+
+HTML
+<form id="user-form" action="/submit" method="post">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Physically located outside the <form> tags -->
+<label for="external-input">External Field:</label>
+<input type="text" id="external-input" name="externalField" form="user-form">
+
+
+<h1>q=31</h1>
+
+HTML
+<form action="/default-submit" method="post">
+  <label for="data-field">Data:</label>
+  <input type="text" id="data-field" name="data">
+
+  <button type="submit">Send to Default URL</button>
+  <button type="submit" formaction="/alternate-submit">Send to Alternate URL</button>
+</form>
+<h1>q=32</h1>
+
+HTML
+<form action="/process-form" method="post">
+  <label for="user-query">Query:</label>
+  <input type="text" id="user-query" name="query">
+
+  <button type="submit">Submit via POST</button>
+  <button type="submit" formmethod="get">Submit via GET</button>
+</form>
+<h1>q=33</h1>
+
+HTML
+<form action="/register" method="post">
+  <label for="req-email">Email (Required):</label>
+  <input type="email" id="req-email" name="email" required>
+
+  <button type="submit">Complete Registration</button>
+  <button type="submit" formnovalidate>Save as Draft</button>
+</form>
+<h1>q=34</h1>
+
+HTML
+<form action="/submit" method="post">
+  <label for="content-field">Content:</label>
+  <input type="text" id="content-field" name="content">
+
+  <button type="submit">Submit (Same Tab)</button>
+  <button type="submit" formtarget="_blank">Preview in New Tab</button>
+</form>
+<h1>q=35</h1>
+
+HTML
+<form action="/login" method="post">
+  <p>
+    <label for="login-username">Username:</label>
+    <input type="text" id="login-username" name="username" required>
+  </p>
+  <p>
+    <label for="login-password">Password:</label>
+    <input type="password" id="login-password" name="password" required minlength="8">
+  </p>
+  <button type="submit">Log In</button>
+</form>
+<h1>q=36</h1>
+
+HTML
+<form action="/register" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <p>
+      <label for="reg-name">Full Name:</label>
+      <input type="text" id="reg-name" name="name" required>
+    </p>
+    <p>
+      <label for="reg-email">Email:</label>
+      <input type="email" id="reg-email" name="email" required>
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferences</legend>
+    <p>
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+      <label for="newsletter">Subscribe to monthly newsletter</label>
+    </p>
+  </fieldset>
+
+  <button type="submit">Create Account</button>
+</form>
+<h1>q=37</h1>
+
+HTML
+<form action="/contact" method="post">
+  <p>
+    <label for="contact-name">Name:</label>
+    <input type="text" id="contact-name" name="name" required>
+  </p>
+  <p>
+    <label for="contact-email">Email:</label>
+    <input type="email" id="contact-email" name="email" required>
+  </p>
+  <p>
+    <label for="contact-message">Message:</label><br>
+    <textarea id="contact-message" name="message" rows="5" cols="40" required></textarea>
+  </p>
+  <button type="submit">Send Message</button>
+</form>
+<h1>q=38</h1>
+
+HTML
+<form action="/feedback" method="post">
+  <p>
+    <label for="satisfaction">Satisfaction (1-10):</label><br>
+    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="5">
+  </p>
+  
+  <fieldset>
+    <legend>Would you recommend us?</legend>
+    <input type="radio" id="rec-yes" name="recommend" value="yes">
+    <label for="rec-yes">Yes</label>
+    
+    <input type="radio" id="rec-no" name="recommend" value="no">
+    <label for="rec-no">No</label>
+  </fieldset>
+
+  <p>
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+  </p>
+
+  <button type="submit">Submit Feedback</button>
+</form>
+<h1>q=39</h1>
+HTML
+<form action="/upload-profile" method="post" enctype="multipart/form-data">
+  <p>
+    <label for="resume-file">Resume (.pdf, .docx):</label>
+    <input type="file" id="resume-file" name="resume" accept=".pdf,.docx" required>
+  </p>
+  <p>
+    <label for="photo-file">Profile Photo:</label>
+    <input type="file" id="photo-file" name="photo" accept="image/*">
+  </p>
+  <button type="submit">Upload Files</button>
+</form>
+<h1>q=40</h1>
+
+HTML
+<form action="/search" method="get">
+  <label for="main-search">Search Site:</label>
+  <input type="search" id="main-search" name="q" autofocus placeholder="Search topics..." required>
+  <button type="submit">Search</button>
+</form>
+<h1>q=41</h1>
+HTML
+<form action="/apply" method="post" enctype="multipart/form-data">
+  <fieldset>
+    <legend>Personal Details</legend>
+    <p>
+      <label for="app-name">Name:</label>
+      <input type="text" id="app-name" name="name" required>
+    </p>
+    <p>
+      <label for="app-email">Email:</label>
+      <input type="email" id="app-email" name="email" required>
+    </p>
+    <p>
+      <label for="app-phone">Phone:</label>
+      <input type="tel" id="app-phone" name="phone">
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Experience</legend>
+    <p>
+      <label for="app-exp">Work Experience:</label><br>
+      <textarea id="app-exp" name="experience" rows="4" cols="40"></textarea>
+    </p>
+    <p>
+      <label for="app-resume">Upload Resume (PDF only):</label>
+      <input type="file" id="app-resume" name="resume" accept=".pdf" required>
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Employment Details</legend>
+    <input type="radio" id="ft" name="employmentType" value="full-time">
+    <label for="ft">Full-time</label>
+    
+    <input type="radio" id="pt" name="employmentType" value="part-time">
+    <label for="pt">Part-time</label>
+  </fieldset>
+
+  <p>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to the terms and conditions</label>
+  </p>
+
+  <button type="submit">Submit Application</button>
+  <button type="submit" formnovalidate>Save Draft</button>
+</form>
+<h1>q=42</h1>
+
+HTML
+<form action="/default-action" method="post" target="_self">
+  <p>
+    <label for="field1">Field 1 (Required):</label>
+    <input type="text" id="field1" name="field1" required>
+  </p>
+  <p>
+    <label for="field2">Field 2 (Required):</label>
+    <input type="text" id="field2" name="field2" required>
+  </p>
+
+  <!-- Button 1: Uses standard form attributes -->
+  <button type="submit">Standard Submit</button>
+
+  <!-- Button 2: Overrides action -->
+  <button type="submit" formaction="/custom-action">Submit to Custom URL</button>
+
+  <!-- Button 3: Overrides method -->
+  <button type="submit" formmethod="get">Submit via GET</button>
+
+  <!-- Button 4: Overrides validation -->
+  <button type="submit" formnovalidate>Bypass Validation</button>
+
+  <!-- Button 5: Overrides target -->
+  <button type="submit" formtarget="_blank">Open in New Tab</button>
+</form>
+</body>
+</html>
