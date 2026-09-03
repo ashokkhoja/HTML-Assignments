@@ -1,0 +1,282 @@
+HTML Question Paper – Set 3 - Google Docs.pdf
+Section A – MCQs
+Q1. Which tag is used to insert an image?
+Answer: B. <img>
+Q2. Which formatting element indicates strong importance?
+Answer: C. <strong>
+Q3. Which attribute is used to specify the destination of a hyperlink?
+Answer: B. href
+Q4. Which tag represents a list item?
+Answer: B. <li>
+Q5. What is the default display behavior of <div>?
+Answer: B. Block
+Q6. Which element provides additional information related to the main content?
+Answer: A. <aside>
+Q7. Which element is commonly used to display preformatted text?
+Answer: B. <pre>
+Q8. Which entity represents a non-breaking space?
+Answer: B. &nbsp;
+Q9. Which HTML element is used to create a form?
+Answer: B. <form>
+Q10. Which element is used to define navigation links?
+Answer: C. <nav> �
+HTML Question Paper – Set 3 - Google Docs.pdf
+Section B – Theory Questions
+Q11. Difference between <b>, <strong>, <i>, and <em>
+<b> → Makes text bold without semantic importance.
+<strong> → Indicates that the text is strongly important.
+<i> → Displays text in italic style.
+<em> → Indicates emphasized text, usually displayed in italic.
+Semantic elements are preferred when the meaning or importance of the content should be conveyed to browsers and assistive technologies.
+Q12. Ordered list vs Unordered list
+<ol> → Creates an ordered list with numbers.
+<ul> → Creates an unordered list with bullets.
+A nested list is created by placing one <ul> or <ol> inside an <li> element.
+Q13. Inline and Block elements
+Inline elements take only the required width and do not normally start on a new line.
+Block elements take the full available width and start on a new line.
+When multiple block elements are placed one after another, they appear vertically, one below another.
+Q14. Semantic elements
+<header> → Contains introductory content or a heading.
+<nav> → Contains navigation links.
+<main> → Contains the main content of the webpage.
+<section> → Defines a section of related content.
+<article> → Represents independent, self-contained content.
+<footer> → Contains footer information.
+Q15. GET vs POST
+GET → Sends form data through the URL. It is commonly used for searching or retrieving data.
+POST → Sends form data in the request body. It is commonly used for submitting sensitive or larger amounts of data. �
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Profile</title>
+</head>
+<body>
+
+    <h1><b>Personal Profile</b></h1>
+
+    <img src="profile.jpg" alt="Profile Image" width="150">
+
+    <h2><strong>Ashok Khoja</strong></h2>
+
+    <p><em>Hello! I am Ashok. I am learning HTML and web development.</em></p>
+
+    <h3>Skills</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>GitHub</li>
+    </ul>
+
+    <h3>Education</h3>
+    <ol>
+        <li>10th</li>
+        <li>12th</li>
+        <li>Computer Science</li>
+    </ol>
+
+    <p><mark>My Profile</mark></p>
+
+    <a href="https://github.com/">Visit My GitHub Profile</a>
+
+</body>
+</html>
+HTML Question Paper – Set 3 - Google Docs.pdf
+Section C – Coding Questions
+Q16. Personal Profile Page
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Table</title>
+</head>
+<body>
+
+<table border="1">
+    <caption>Employee Details</caption>
+
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Amit</td>
+            <td>Development</td>
+            <td>45000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Neha</td>
+            <td>Design</td>
+            <td>40000</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Rahul</td>
+            <td>Testing</td>
+            <td>42000</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th colspan="3">Total Salary</th>
+            <th>127000</th>
+        </tr>
+    </tfoot>
+
+</table>
+
+</body>
+</html>
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+
+<h2>Contact Form</h2>
+
+<form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"
+           placeholder="Enter your name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"
+           placeholder="Enter your email" required>
+    <br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="Enter your phone" required>
+    <br><br>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+        <option value="">Select Subject</option>
+        <option value="general">General</option>
+        <option value="support">Support</option>
+        <option value="feedback">Feedback</option>
+    </select>
+    <br><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"
+              placeholder="Enter your message" required></textarea>
+    <br><br>
+
+    <p>Preferred Contact Method:</p>
+
+    <input type="radio" id="emailContact"
+           name="contact" value="email" required>
+    <label for="emailContact">Email</label>
+
+    <input type="radio" id="phoneContact"
+           name="contact" value="phone">
+    <label for="phoneContact">Phone</label>
+
+    <br><br>
+
+    <input type="checkbox" id="terms"
+           name="terms" required>
+    <label for="terms">I accept the terms and conditions</label>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
+Q17. Employee Table
+HTML
+Q18. Contact Form
+HTML
+Q19. Code and Entities
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Entities</title>
+</head>
+<body>
+
+    &lt;div class=&quot;container&quot;&gt;
+    <br>
+    &lt;p&gt;Hello &amp; Welcome&lt;/p&gt;
+    <br>
+    &lt;/div&gt;
+
+    <br><br>
+
+    &copy; 2026
+    <br>
+    5 &lt; 10
+    <br>
+    10 &gt; 5
+    <br>
+    A &amp; B
+
+</body>
+</html>
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+</head>
+<body>
+
+<header>
+    <h1>ABC College</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Welcome to ABC College</h2>
+        <p>ABC College provides quality education and career opportunities.</p>
+    </section>
+
+    <article>
+        <h2>Latest News</h2>
+        <p>Admissions are now open for the new academic session.</p>
+    </article>
+
+    <aside>
+        <h3>Important Links</h3>
+        <p>Student Portal</p>
+        <p>Notice Board</p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+Q20. Complete Semantic Layout
+HTML
+Q16–Q20 के requirements इसी question paper में दिए गए हैं। � �
+HTML Question Paper – Set 3 - Google Docs.pdf
+HTML Question Paper – Set 3 - Google Docs.pdf
